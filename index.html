@@ -35,8 +35,8 @@
                         <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Links</a>
                         <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
-                            <li><a class="dropdown-item text-muted" href="">Invite</a></li>
-                            <li><a class="dropdown-item text-muted" href="">Github</a></li>
+                            <li><a class="dropdown-item text-muted" href="https://discord.com/oauth2/authorize?client_id=1233881071821652108">Invite Bot</a></li>
+                            <li><a class="dropdown-item text-muted" href="https://github.com/xxcosita3czxx/lorelei-bot.git">Github</a></li>
                             <li><a class="dropdown-item text-muted" href="">Support Server</a></li>
                         </ul>
                     </li>
@@ -55,7 +55,7 @@
                 <div>
                     <h1><span class="text-info">Lorelei</span> Bot</h1>
                     <p>Text</p>
-                    <a class="btn btn-info" href="">Invite Bot</a>
+                    <a class="btn btn-info" href="https://discord.com/oauth2/authorize?client_id=1233881071821652108">Invite Bot</a>
                     <a class="m-2 btn btn-light" href="">Support Server</a>
                 </div>
                 <img class="img-fluid w-50" src="./img/ArisBot.svg" alt="">
@@ -119,24 +119,24 @@
             <div class="py-2 text-center">
                 <h2>Statics:</h2>
             </div>
-            <div class="row align-items-center justify-content-center text-center -5">
+            <div id="botinfo" class="row align-items-center justify-content-center text-center -5">
                 <div class="col">
                     <img src="./img/statics.svg" alt="" class="img-fluid d-none d-md-block">
                 </div>
-                <div class="col-sm p-5 h1">
+                <div id="guilds-info" class="col-sm p-5 h1">
                     <i class="bi bi-hdd-stack text-primary"></i>
-                    <h5>100</h5>
-                    <h5>Server</h5>
+                    <h5>Guilds</h5>
+                    <h5 id="guilds">Loading..</h5>
                 </div>
-                <div class="col-sm p-5 h1">
-                    <i class="bi bi bi-people-fill text-primary"></i>
-                    <h5>100</h5>
-                    <h5>Users</h5>
-                </div>
-                <div class="col-sm p-5 h1">
+                <div id="ping-info" class="col-sm p-5 h1">
                     <i class="bi bi bi-hash text-primary"></i>
-                    <h5>100</h5>
-                    <h5>Channels</h5>
+                    <h5>Ping</h5>
+                    <h5 id="ping">Loading..</h5>
+                </div>
+                <div id="uptime-info" class="col-sm p-5 h1">
+                    <i class="bi bi bi-people-fill text-primary"></i>
+                    <h5>Uptime</h5>
+                    <h5 id="uptime">Loading..</h5>
                 </div>
             </div>
 
@@ -188,6 +188,10 @@
 </div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/fetchdata.js"></script>
+    <script src="./js/update.data.js"></script>
+    <script src="./js/fetchtime.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
