@@ -17,34 +17,7 @@
 <body>
 
     <!-- Navbar -->
-
-    <div class="navbar navbar-expand-md bg-dark navbar-dark">
-        <div class="container">
-            <a href="" class="navbar-brand text-info">Lorelei Bot</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span
-                    class="navbar-toggler-icon"></span></button>
-
-            <div class="collapse navbar-collapse" id="mainmenu">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a href="#Features" class="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="#Statics" class="nav-link">Statics</a></li>
-                    <li class="nav-item"><a href="#FAQ" class="nav-link">Ask me</a></li>
-                    <li class="nav-item"><a href="./pages/commands.html" class="nav-link">Commands</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Links</a>
-                        <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
-                            <li><a class="dropdown-item text-muted" href="https://discord.com/oauth2/authorize?client_id=1233881071821652108">Invite Bot</a></li>
-                            <li><a class="dropdown-item text-muted" href="https://github.com/xxcosita3czxx/lorelei-bot.git">Github</a></li>
-                            <li><a class="dropdown-item text-muted" href="">Support Server</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
+    <div id="navbar", file="navbar.html"></div>
 
     <!-- Info -->
 
@@ -144,54 +117,15 @@
     </section>
 
     <!-- footer -->
+    <div id="footer", file="footer.html"></div>
 
-    <div class="footer-clean bg-dark">
-    <footer>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Quick access</h3>
-                    <ul>
-                        <li><a href="#Features">Features</a></li>
-                        <li><a href="#Statics">Statics</a></li>
-                        <li><a href="#FAQ">Ask me</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="./pages/commands.html">Commands</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">License</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Links</h3>
-                    <ul>
-                        <li><a href="#">Support server</a></li>
-                        <li><a href="#">Invite bot</a></li>
-                        <li><a href="#">Github</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 item social"><a href="#"><ion-icon name="logo-discord"></ion-icon></a><a href="#"><ion-icon name="logo-facebook"></ion-icon></a><a href="#"><ion-icon name="logo-twitter"></ion-icon></a><a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <p class="copyright">Lorelei Bot © 2022</p>
-                </div>
-            </div>
-        </div>
-        <div class="page-footer font-small text-light mt-5">
-        <div class="footer-copyright text-center">Made by
-            <a href="https://github.com/Hadi-koubeissi/">Apoliak</a>
-            © 2024
-          </div>
-        </div>
-    </footer>
 </div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/fetchdata.js"></script>
     <script src="./js/update.data.js"></script>
     <script src="./js/fetchtime.js"></script>
-
+    <script src="./js/loadComponents.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
