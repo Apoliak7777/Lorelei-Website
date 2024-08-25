@@ -57,6 +57,7 @@
   font-size:13px;
   opacity:0.6;
 }
+
 hr {
   border: 1px solid aqua;
   margin: 1rem;
@@ -100,53 +101,4 @@ hr {
 ::-ms-input-placeholder {
 	/* Microsoft Edge */
 	color: rgb(219, 219, 219);
-}
-
-
-.features-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.feature-card {
-    background-color: #007BFF;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 350px;
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.feature-icon img {
-    width: 50px;
-    margin-bottom: 15px;
-}
-
-.feature-card h3 {
-    margin: 10px 0;
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.feature-card p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Responsivita */
-@media (max-width: 768px) {
-    .features-container {
-        flex-direction: column;
-        align-items: center;
-    }
 }
