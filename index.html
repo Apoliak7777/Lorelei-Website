@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="/img/Lorelei.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -30,7 +31,7 @@
 
 </head>
 
-<body>
+<body class="bg-dark">
 
     <!-- Navbar -->
     <div id="navbar", file="navbar.html"></div>
@@ -47,7 +48,7 @@
                     <a class="btn btn-info" href="https://discord.com/oauth2/authorize?client_id=1233881071821652108">Invite Bot</a>
                     <a class="m-2 btn btn-light" href="">Support Server</a>
                 </div>
-                <img class="img-fluid w-50" src="./img/Lorelei-transp.svg" alt="">
+                <img class="text-center" width="auto" height="150" src="./img/Lorelei-transp.png" alt="">
             </div>
         </div>
     </section>
@@ -56,42 +57,42 @@
     <!-- Features -->
 
 
-    <section  id="Features" class="py-5 bg-dark">
+    <section  id="Features" class="py-5 bg-dark text-light">
         <div class="container bg-dark">
             <h2 class="text-center text-info mb-4">
                 Features
             </h2>
             <div class="row text-center bg-dark">
                 <div class="col-sm">
-                    <div class="card bg-dark text-light mb-3">
+                    <div class="card bg-dark text-light mb-3 h1">
                         <div class="h1 mt-3">
                             <i class="bi bi-clock-history"></i>
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title text-info">Easy to Use</h4>
-                            <p class="card-text">Text</p>
+                            <h5 class="card-text">Text</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card bg-dark text-light mb-3">
+                    <div class="card bg-dark text-light mb-3 h1">
                         <div class="h1 mt-3">
                             <i class="bi bi-capslock-fill"></i>
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title text-info">24/7 Online</h4>
-                            <p class="card-text">Text</p>
+                            <h5 class="card-text">Text</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card bg-dark text-light mb-3">
+                    <div class="card bg-dark text-light mb-3 h1">
                         <div class="h1 mt-3">
                             <i class="bi bi-folder2-open"></i>
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title text-info">Open Source</h4>
-                            <p class="card-text">Text</p>
+                            <h5 class="card-text">Text</h5>
                         </div>
                     </div>
                 </div>
@@ -109,24 +110,19 @@
                 <h2>Statics:</h2>
             </div>
             <div id="botinfo" class="row align-items-center justify-content-center text-center -5">
-<!--    
-                <div class="col">
-                    <img src="./img/statics.svg" alt="" class="img-fluid d-none d-md-block">
+                <div id="guilds-info" class="card bg-dark col-sm p-5 h1">
+                    <i class="bi bi-hdd-stack"></i>
+                    <h4 class="text-primary">Guilds</h5>
+                    <h5 id="guilds">Loading..</h5>
                 </div>
--->
-                <div id="guilds-info" class="col-sm p-5 h1">
-                    <i class="bi bi-hdd-stack text-primary"></i>
-                    <h4>Guilds</h5>
-                    <h5 id="guilds">Loading..</p>
-                </div>
-                <div id="ping-info" class="col-sm p-5 h1">
-                    <i class="bi bi bi-hash text-primary"></i>
-                    <h4>Ping</h5>
+                <div id="ping-info" class="card bg-dark col-sm p-5 h1">
+                    <i class="bi bi bi-hash"></i>
+                    <h4 class="card-title text-primary">Ping</h5>
                     <h5 id="ping">Loading..</h5>
                 </div>
-                <div id="uptime-info" class="col-sm p-5 h1">
-                    <i class="bi bi bi-people-fill text-primary"></i>
-                    <h4>Uptime</h5>
+                <div id="uptime-info" class="card bg-dark col-sm p-5 h1">
+                    <i class="bi bi bi-people-fill"></i>
+                    <h4 class="text-primary">Uptime</h5>
                     <h5 id="uptime">Loading..</h5>
                 </div>
             </div>

@@ -15,7 +15,7 @@ function fetchInitialUptime(web) {
             if (error.message.includes('NetworkError')) {
                 document.getElementById("uptime").innerText = 'Bot offline';
             } else {
-                document.getElementById('uptime').innerText = 'Error fetching uptime';
+                document.getElementById('uptime').innerText = 'Bot offline';
             }
         });
 }
