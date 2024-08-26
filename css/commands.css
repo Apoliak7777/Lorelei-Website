@@ -6,7 +6,7 @@
 :root {
 	--descreption-color: rgb(207, 207, 207);
 	--main-color: #4856ee;
-	--seacondry-color: #626ffd;
+	--seacondry-color: #a533ff;
 	--discord-color: #5865f2;
 	--background-main-color: #21003b;
 	--card-background: #21003b;
@@ -67,7 +67,7 @@ nav {
 }
 
 .card {
-	background-color: #21003b;
+	background-color: #21003b !important;
 }
 .btn-primary {
 	text-align: left;

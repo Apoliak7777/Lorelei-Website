@@ -36,7 +36,7 @@
                 <div class="card p-3">
                     <h5>Select Commands Category</h5>
                     <hr />
-                    <button onclick="active(this)" id="CategoryBtnAll" class="category-button btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
+                    <button onclick="active(this)" id="CategoryBtnAll" class="category-button text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
                     <button onclick="active(this)" id="CategoryBtn0" class="category-button text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Moderation Commands</button>
                     <button onclick="active(this)" id="CategoryBtn1" class="category-button text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; General Commands</button>
                     <button onclick="active(this)" id="CategoryBtn2" class="category-button text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Leveling Commands</button>
@@ -50,10 +50,10 @@
 
                 <div id="commands-section">
                     <div class="commands-section" id="Category0">
-                        <div class="command" comm-name="/test" comm-desc="Test command" comm-examples="Usage example: /test @member"></div>
+                        <div class="command" comm-name="/test" comm-id="test" comm-desc="Test command" comm-examples="Usage example: /test @member"></div>
                     </div>
                     <div class="commands-section" id="Category1">
-                        <div class="command" comm-name="/2test" comm-desc="Test command" comm-examples="Usage example: /2test @member"></div>
+                        <div class="command" comm-name="/22testtwo" comm-id="testtwo" comm-desc="Test command" comm-examples="Usage example: /2test @member"></div>
                     </div>
                     <div class="commands-section" id="Category2">
                     </div>
@@ -81,10 +81,11 @@
             document.querySelectorAll('.command').forEach(div => {
                 const name = div.getAttribute('comm-name');
                 const desc = div.getAttribute('comm-desc');
+                const commandidraw = div.getAttribute('comm-id');
                 const examples = div.getAttribute('comm-examples') || ''; // Ensure examples are handled
                 const categoryId = div.closest('.commands-section').id; // Get category ID from closest section
     
-                const commandId = name.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+                const commandId = commandidraw.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
     
                 const commandHtml = `
                     <div class="accordion accordion-flush mt-2" id="${commandId}">
