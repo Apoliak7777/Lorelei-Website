@@ -77,7 +77,7 @@ def start_server():
     except OSError as e:
         if e.errno == 98:  # Address already in use
             print("Address already in use. Retrying...")
-            time.sleep(1)  # Wait before retrying
+            time.sleep(5)  # Wait before retrying
             start_server()
     except KeyboardInterrupt:
         print("Shutting down server...")

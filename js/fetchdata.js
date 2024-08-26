@@ -16,7 +16,7 @@ function fetchData(url, elementId) {
             if (error.message.includes('NetworkError')) {
                 document.getElementById(elementId).innerText = 'Bot offline';
             } else {
-                document.getElementById(elementId).innerText = "Error: "+error
+                document.getElementById(elementId).innerText = "Bot offline";
             }
         });
 }

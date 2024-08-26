@@ -8,8 +8,8 @@
 	--main-color: #4856ee;
 	--seacondry-color: #626ffd;
 	--discord-color: #5865f2;
-	--background-main-color: #212529;
-	--card-background: #2a2d31;
+	--background-main-color: #21003b;
+	--card-background: #21003b;
 }
 
 .badge-vip{
@@ -67,7 +67,7 @@ nav {
 }
 
 .card {
-	background-color: var(--card-background);
+	background-color: #21003b;
 }
 .btn-primary {
 	text-align: left;
@@ -120,13 +120,13 @@ hr {
 }
 
 .search-box {
-	background-color: #2f2f30;
+	background-color: #21003b;
 	outline: none;
 	border: none;
 	border-radius: 20px;
 	color: #ffffff;
 	padding: 10px 22px;
-	border: 2px solid #2f2f30;
+	border: 2px solid #21003b;
 }
 
 .search-box:focus {
@@ -134,7 +134,7 @@ hr {
 }
 
 .accordion-item {
-	background-color: var(--card-background);
+	background-color: #21003b;
 	border-radius: 8px !important;
 }
 .accordion-button {
