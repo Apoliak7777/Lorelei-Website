@@ -7,3 +7,5 @@
 AddType text/html .shtml
 AddOutputFilter INCLUDES .shtml
 Options +Includes
+XBitHack on
+ErrorDocument 404 /404.html
