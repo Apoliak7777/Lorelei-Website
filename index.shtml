@@ -70,7 +70,7 @@
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title text-info">Easy to Use</h4>
-                            <h5 class="card-text">Text</h5>
+                            <h5 class="card-text">With our config commands..</h5>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title text-info">24/7 Online</h4>
-                            <h5 class="card-text">Text</h5>
+                            <h5 class="card-text">Up to 98% uptime*..</h5>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title text-info">Open Source</h4>
-                            <h5 class="card-text">Text</h5>
+                            <h5 class="card-text">All code is available on github..</h5>
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                 </div>
                 <div id="uptime-info" class="card bg-dark col-sm p-5 h1">
                     <i class="bi bi bi-people-fill"></i>
-                    <h4 class="text-primary">Uptime</h5>
+                    <h4 class="text-primary">Running for</h5>
                     <h5 id="uptime">Loading..</h5>
                 </div>
             </div>

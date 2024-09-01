@@ -1,11 +1,11 @@
 // Call fetchData to update specific elements
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetchInitialUptime('http://localhost:8000/uptime');
+    fetchInitialUptime('http://localhost:9921/uptime');
     if (document.getElementById('ping-info')) {
-        fetchData('http://localhost:8000/ping', 'ping');
+        fetchData('http://localhost:9921/ping', 'ping');
     }
     if (document.getElementById('guilds-info')) {
-        fetchData('http://localhost:8000/guilds', 'guilds');
+        fetchData('http://localhost:9921/guilds', 'guilds');
     }
 });
