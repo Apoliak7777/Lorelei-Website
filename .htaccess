@@ -6,7 +6,7 @@
 
 AddType text/html .shtml
 AddOutputFilter INCLUDES .shtml
-Options +Includes
-Options +ExecCGI
 XBitHack on
+Options +ExecCGI +Includes
 AddHandler cgi-script .py
+AddHandler server-parsed .html
