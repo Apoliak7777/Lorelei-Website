@@ -1,0 +1,12 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Origin, Content-Type, Accept, Authorization"
+</IfModule>
+
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+XBitHack on
+Options +ExecCGI +Includes
+AddHandler cgi-script .py
+AddHandler server-parsed .html
